@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav>
+
+        <div class="main-nav container flex" >
+            
+             <a href="#" class="company-logo" onClick="reload()" style="text-decoration: none;">
+                
+               <div class="logo-first">
+
+                  <img src="./assest/s-logo.png" alt="logo" height="50px" class="s-logo">
+                  <span class="name">hahnawaz</span>
+               </div>
+            </a> 
+          
+
+            <div class="nav-links">
+                <ul class="flex nav-list">
+                    <div class="hover-links nav-items" id="ipl" onClick="onNavItemClick('ipl')">Ipl</div>
+                    <div class="hover-links nav-items" id="finance" onClick="onNavItemClick('finance')">Finance</div>
+                    <div class="hover-links nav-items" id="politics" onClick="onNavItemClick('politics')">Politics</div>
+                </ul>
+            </div>
+
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="Search For eg:ipl">
+                <button class="search-buttton" id="search-button">Search</button>
+            </div>
+
+            <div class="menu-icon">
+                <div class="icon"><span class="icon-1">&#9776;</span></div>
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="card-container">
+
+            <div class="card">
+                <div class="card-header">
+                  
+                   <video src="./assest/Loading Screen Effect.mp4" controls autoplay muted  width="300px" height="300px"></video>
+                </div>
+                <div class="card-content">
+                    <h3 class="news-title">This is Title</h3>
+                    <h6 class="news-source">End Gadget 26/02/2030</h6>
+                    <p class="news=desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae itaque quasi, vel officiis quos sint aliquid delectus quibusdam iure? Fugiat quae nihil consequuntur eius quam ipsam incidunt voluptatem. Veritatis!</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <template id="template-news card">
+        <div class="card">
+            <div class="card-header">
+                <img src="./assest/shahnawazlogo.png"  alt="" id="news-image">
+            </div>
+            <div class="card-content">
+                <h3 class="news-title" id="news-title">This is Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/02/2030</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus vitae itaque quasi, vel officiis quos sint aliquid delectus quibusdam iure? Fugiat quae nihil consequuntur eius quam ipsam incidunt voluptatem. Veritatis!</p>
+            </div>
+        </div>
+    </template>
+
+    <!-- HTML Code for accordian start -->
+
+    <section id="accordian">
+
+      
+        <h2 class="faq">FAQ'S</h2>
+
+        <div class="accordian">
+            <div class="question">
+                <h4>What is this Project?</h4>
+                <p class="icon active"> ▼</p>
+            </div>
+
+            <div class="answer active">
+                <p>This is Blog Website, created by with the Help of HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+
+        <div class="accordian">
+            <div class="question">
+                <h4>Which technology is use?</h4>
+                <p class="icon active"> ▼</p>
+            </div>
+
+            <div class="answer active">
+                <p>This is Blog Website,Technology use like HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+
+        <div class="accordian">
+            <div class="question">
+                <h4>Provide the Short descriptin of Project?</h4>
+                <p class="icon active"> ▼</p>
+            </div>
+
+            <div class="answer active">
+                <p>This is a blog website which fetch the news form Open API with the help of API key.</p>
+            </div>
+        </div>
+        <div class="accordian">
+            <div class="question">
+                <h4>I have a Few Question Regarding this Project?</h4>
+                <p class="icon active"> ▼</p>
+            </div>
+
+            <div class="answer active">
+                <p>I apperciate Your Question, Kindly Fill the below HTML Form.</p>
+            </div>
+        </div>
+
+       
+
+    </section>
+    <!-- HTML Code for accordian end -->
+
+    <div class="blank" widht="100%" height="30px">
+
+    </div>
+
+    <footer class="form">
+        <div class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2 class="form-head">Get in Touch</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="43d0d465-84ce-4f28-8adc-eee6d4a2b400">
+                <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+                
+                <input type="email" name="email" placeholder="Your Email-id" class="contact-input" required>
+                <input type="text" name="name" placeholder="Your Subject" class="contact-input" required>
+                <textarea name="message" placeholder="Your Message" class="contact-input" required></textarea>
+                <button type="submit">Submit &rarr;</button>
+            </form>
+            
+
+     
+        </div>
+       
+        
+
+
+    </footer>
+
+      
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
