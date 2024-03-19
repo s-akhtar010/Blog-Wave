@@ -1,4 +1,4 @@
-const Api_key="46e2ac5e4b3b4ebc904215d25fbed03a";
+const Api_key="ec471072c3e344e7be27c64a9b81423d";
 
 const url="https://newsapi.org/v2/everything?q=";
 
